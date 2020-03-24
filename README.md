@@ -21,4 +21,5 @@ Simple repo for understanding the basic Web elements.
 - `<br>`: Break the line;
 
 Structure tags:
+<br>
 ![](structures.png)
