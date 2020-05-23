@@ -21,5 +21,26 @@ const { lastName, happy = true } = person
 console.log(lastName, happy)
 
 // Nested attributes must be defined/not null for destructuring
-const { company: { companyName, addr } } = person 	// TypeError
+// const { company: { companyName, addr } } = person 	// TypeError
 
+
+// Destructuring Arrays...
+const [someVar] = [10]
+console.log(a)
+
+const [n1, , n3, , n5, n6 = 0] = [10, 7, 9, 8]
+console.log(n1, n3, n5, n6)
+
+// With matrix... 
+const[, [, value]] = [[, 8, 9], [1, 2, 3]]
+console.log(value)
+
+
+// With functions...
+function rand({ min = 0, max = 1000}){		// Destructuring at the args
+	return Math.floor(Math.random() *  ( max - min ) + min)
+}
+
+const newObj = { max: 100, min: 40}
+console.log(rand(newObj))
+console.log(rand({ max: 5}))
