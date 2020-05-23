@@ -38,6 +38,9 @@ console.log(value)
 
 // With functions...
 function rand({ min = 0, max = 1000}){		// Destructuring at the args
+	
+	if(min > max) [min, max] = [max, min]
+
 	return Math.floor(Math.random() *  ( max - min ) + min)
 }
 
