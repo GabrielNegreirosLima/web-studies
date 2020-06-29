@@ -6,5 +6,5 @@ function compoundInterest(initialCapital, rate, time){
 	return initialCapital * (1 + rate)**time
 }
 
-console.log(simpleInterest(520, 0.01, 3))
-console.log(compoundInterest(520, 0.01, 3))
+console.log(simpleInterest(20000, 0.05, 10))
+console.log(compoundInterest(20000, 0.05, 25))
