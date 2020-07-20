@@ -1,7 +1,12 @@
 {
   "name": "employees",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "employees.js",
+  "scripts": {
+	"start": "node employees.js",
+	"dev": "node employees.js",
+	"test": "echo \"Error: there isn't tests, learning just deps and scripts here :)\" && exit 1"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "0.19.2"
